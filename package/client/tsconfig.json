@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../output/client",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts"],
+  "exclude": ["../../node_modules"]
+}
