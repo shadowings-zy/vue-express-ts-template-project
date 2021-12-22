@@ -22,14 +22,6 @@ module.exports = {
         use: ['vue-loader', 'vue-svg-loader']
       },
       {
-        test: /\.mjs$/,
-        resolve: {
-          fullySpecified: false
-        },
-        include: /node_modules/,
-        type: 'javascript/auto'
-      },
-      {
         test: /\.ts$/,
         loader: 'ts-loader',
         options: {

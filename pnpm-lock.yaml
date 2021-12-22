@@ -1,10 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/compression': ^1.7.2
   '@types/express': ^4.17.13
   '@vue/compiler-sfc': ^3.2.23
   '@vue/runtime-dom': ^3.2.24
   axios: ^0.24.0
+  compression: ^1.7.4
   css-loader: ^6.5.1
   express: ^4.17.1
   html-webpack-plugin: ^5.5.0
@@ -24,9 +26,11 @@ specifiers:
   webpack-merge: ^5.8.0
 
 dependencies:
+  compression: 1.7.4
   express: 4.17.1
 
 devDependencies:
+  '@types/compression': 1.7.2
   '@types/express': 4.17.13
   '@vue/compiler-sfc': 3.2.26
   '@vue/runtime-dom': 3.2.26
@@ -108,6 +112,12 @@ packages:
     dependencies:
       '@types/connect': 3.4.35
       '@types/node': 17.0.0
+    dev: true
+
+  /@types/compression/1.7.2:
+    resolution: {integrity: sha512-lwEL4M/uAGWngWFLSG87ZDr2kLrbuR8p7X+QZB1OQlT+qkHsCPDVFnHPyXf4Vyl4yDDorNY+mAhosxkCvppatg==}
+    dependencies:
+      '@types/express': 4.17.13
     dev: true
 
   /@types/connect/3.4.35:
@@ -660,7 +670,6 @@ packages:
   /bytes/3.0.0:
     resolution: {integrity: sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=}
     engines: {node: '>= 0.8'}
-    dev: true
 
   /bytes/3.1.0:
     resolution: {integrity: sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==}
@@ -800,7 +809,6 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: 1.51.0
-    dev: true
 
   /compression/1.7.4:
     resolution: {integrity: sha512-jaSIDzP9pZVS4ZfQ+TzvtiWhdpFhE2RDHz8QJkpX9SIpLq88VueF5jJw6t+6CUQcAoA6t+x89MLrWAqpfDE8iQ==}
@@ -813,7 +821,6 @@ packages:
       on-headers: 1.0.2
       safe-buffer: 5.1.2
       vary: 1.1.2
-    dev: true
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
@@ -2207,7 +2214,6 @@ packages:
   /on-headers/1.0.2:
     resolution: {integrity: sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==}
     engines: {node: '>= 0.8'}
-    dev: true
 
   /once/1.4.0:
     resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}

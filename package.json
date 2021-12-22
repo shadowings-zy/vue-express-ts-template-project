@@ -16,6 +16,7 @@
   "author": "shadowings-zy",
   "license": "ISC",
   "devDependencies": {
+    "@types/compression": "^1.7.2",
     "@types/express": "^4.17.13",
     "@vue/compiler-sfc": "^3.2.23",
     "@vue/runtime-dom": "^3.2.24",
@@ -38,6 +39,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1"
   }
 }

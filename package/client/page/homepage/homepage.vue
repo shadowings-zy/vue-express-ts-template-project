@@ -3,19 +3,12 @@
 </template>
 
 <script lang="ts">
-import { onMounted, reactive, toRefs } from 'vue';
-import { http } from '../../service/axios';
+import { reactive, toRefs } from 'vue';
 
 export default {
   setup() {
     const data = reactive({
-      text: ''
-    });
-
-    onMounted(async () => {
-      const res = await http.get('/api/getHomepageData');
-      const { description } = res.data.data;
-      data.text = description;
+      text: 'welcome to vue-express-ts template project'
     });
 
     return {

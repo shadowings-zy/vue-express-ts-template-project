@@ -4,8 +4,6 @@
     "outDir": "../../output",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
   },
   "include": ["./**/*.ts"],
   "exclude": ["../../node_modules"]

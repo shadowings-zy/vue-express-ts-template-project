@@ -1,13 +1,9 @@
 import express from 'express';
-import { HomepageController } from './controller/homepageController';
+import { UserController } from './controller/userController';
 
 export const getRouter = () => {
-  const homepageController = new HomepageController();
-
+  const userController = new UserController();
   const router = express.Router();
-
-  router.get('/', homepageController.helloWorld);
-  router.get('/getHomepageData', homepageController.getHomepageData);
-
+  router.get('/user', userController.getUser);
   return router;
 };

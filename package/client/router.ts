@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+import store from './store';
 import { ROUTER_MAP } from './constant';
-import store from '../store';
 
-const homepage = () => import(/* webpackChunkName: 'homepage' */ '../page/homepage/homepage.vue');
-const about = () => import(/* webpackChunkName: 'about' */ '../page/about/about.vue');
+const homepage = () => import(/* webpackChunkName: 'homepage' */ './page/homepage/homepage.vue');
+const user = () => import(/* webpackChunkName: 'user' */ './page/user/user.vue');
+const about = () => import(/* webpackChunkName: 'about' */ './page/about/about.vue');
 
 const routerHashHistory = createWebHashHistory();
 
@@ -16,6 +17,10 @@ const router = createRouter({
     },
     {
       path: ROUTER_MAP[1],
+      component: user
+    },
+    {
+      path: ROUTER_MAP[2],
       component: about
     }
   ]

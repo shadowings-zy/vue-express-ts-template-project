@@ -2,14 +2,15 @@
   <div class="navigator">
     <div class="navigator-left">
       <div class="navigator-item" @click="handleSelect('0')">主页</div>
-      <div class="navigator-item" @click="handleSelect('1')">关于</div>
+      <div class="navigator-item" @click="handleSelect('1')">用户列表</div>
+      <div class="navigator-item" @click="handleSelect('2')">关于</div>
     </div>
     <github-logo class="navigator-logo" @click="goGithub"></github-logo>
   </div>
 </template>
 
 <script lang="ts">
-import { ROUTER_MAP } from '../router/constant';
+import { ROUTER_MAP } from '../constant';
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
 import githubLogo from '../asset/github.svg';

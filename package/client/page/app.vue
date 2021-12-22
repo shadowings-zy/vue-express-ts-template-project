@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import appNavigator from './component/appNavigator.vue';
+import appNavigator from '../component/appNavigator.vue';
 import { onMounted, reactive, toRefs } from 'vue';
 
 const MIN_WIDTH = 750;
